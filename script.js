@@ -113,6 +113,7 @@ function checkPair(weightCap, nestingRecords, level) {
         values.splice(i,1);
       }
     }
+    globalMax = 0;
     //run through the values array once to grab the biggest value as the initial globalMax
     values.forEach(value => globalMax = value > globalMax ? value : globalMax);
     //nestingRecords stores the data necessary to go backtrack up levels of recursion
